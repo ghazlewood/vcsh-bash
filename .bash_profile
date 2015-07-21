@@ -28,7 +28,6 @@ unset MAILCHECK
 
 
 # Change this to your console based IRC client of choice.
-
 export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
@@ -45,3 +44,6 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:./node_modules/.bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:./node_modules/.bin:/opt/nginx/sbin:/Users/george.hazlewood/Development/sf-tools/bin:/Users/george.hazlewood/Support-Tools/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/Users/george.hazlewood/.gem/ruby/1.8/bin:/Applications/acquia-drupal/drush:/Users/george.hazlewood/bin:"/Applications/Dev Desktop/drush":~/.composer/vendor/bin
+
+# boot2docker
+$(boot2docker shellinit)
