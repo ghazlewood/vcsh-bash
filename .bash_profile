@@ -45,5 +45,12 @@ source $BASH_IT/bash_it.sh
 
 PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:./node_modules/.bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:./node_modules/.bin:/opt/nginx/sbin:/Users/george.hazlewood/Development/sf-tools/bin:/Users/george.hazlewood/Support-Tools/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/Users/george.hazlewood/.gem/ruby/1.8/bin:/Applications/acquia-drupal/drush:/Users/george.hazlewood/bin:"/Applications/Dev Desktop/drush":~/.composer/vendor/bin
 
-# boot2docker
-$(boot2docker shellinit)
+# setup docker-machine env vars
+eval "$(docker-machine env dev)"
+
+# http://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
+# and
+# https://github.com/settings/tokens
+export HOMEBREW_GITHUB_API_TOKEN=9eb582dd7cbee17f9f3d9a9ccf9cf28053053ddf
+
+export AHSTAGES=ace,ac,gardens
