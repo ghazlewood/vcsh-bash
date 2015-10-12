@@ -48,9 +48,6 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:./node_modules/.bin:/usr/loca
 # setup docker-machine env vars
 eval "$(docker-machine env dev)"
 
-# http://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
-# and
-# https://github.com/settings/tokens
-export HOMEBREW_GITHUB_API_TOKEN=9eb582dd7cbee17f9f3d9a9ccf9cf28053053ddf
+source ~/.bash_private
 
 export AHSTAGES=ace,ac,gardens
